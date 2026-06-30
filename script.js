@@ -71,34 +71,83 @@ document.addEventListener("DOMContentLoaded", () => {
     createParticles();
   }
 
-  // 4. Form Submission Prevent Default (Demo purpose)
-  const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      // Simulate form submission
-      const btn = contactForm.querySelector('button[type="submit"]');
-      const originalText = btn.innerHTML;
+  // 4. AJAX Form Submission using FormSubmit.co
+  const setupFormHandler = (formId, successMessage = "Message Sent!") => {
+    const form = document.getElementById(formId);
+    if (!form) return;
 
-      btn.innerHTML =
-        '<i class="fa-solid fa-circle-notch fa-spin me-2"></i> Sending...';
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      
+      const btn = form.querySelector('button[type="submit"]');
+      if (!btn) return;
+      
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin me-2"></i> Sending...';
       btn.disabled = true;
 
-      setTimeout(() => {
-        btn.innerHTML = '<i class="fa-solid fa-check me-2"></i> Message Sent!';
+      // Prepare data using FormData
+      const formData = new FormData(form);
+
+      // Perform fetch to FormSubmit
+      fetch("https://formsubmit.co/ajax/lokeshvanumu61@gmail.com", {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        btn.innerHTML = `<i class="fa-solid fa-check me-2"></i> ${successMessage}`;
         btn.classList.remove("btn-primary-gradient");
         btn.classList.add("btn-success");
-        contactForm.reset();
+        form.reset();
+
+        // If the form has a file upload name display, reset it
+        const fileNameDisplay = document.getElementById("fileNameDisplay");
+        if (fileNameDisplay) {
+          fileNameDisplay.classList.add("d-none");
+          fileNameDisplay.textContent = "";
+        }
+        // If file wrapper styled, reset it
+        const fileWrapper = document.querySelector(".file-upload-wrapper");
+        if (fileWrapper) {
+          fileWrapper.style.borderColor = "rgba(0,0,0,0.15)";
+          fileWrapper.style.backgroundColor = "rgba(248, 249, 250, 1)";
+        }
 
         setTimeout(() => {
           btn.innerHTML = originalText;
           btn.classList.add("btn-primary-gradient");
           btn.classList.remove("btn-success");
           btn.disabled = false;
-        }, 3000);
-      }, 1500);
+        }, 4000);
+      })
+      .catch(error => {
+        console.error("Form submission error:", error);
+        btn.innerHTML = '<i class="fa-solid fa-circle-xmark me-2"></i> Failed to Send';
+        btn.classList.remove("btn-primary-gradient");
+        btn.classList.add("btn-danger");
+        
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.add("btn-primary-gradient");
+          btn.classList.remove("btn-danger");
+          btn.disabled = false;
+        }, 4000);
+      });
     });
-  }
+  };
+
+  setupFormHandler("contactForm", "Message Sent!");
+  setupFormHandler("trainingContactForm", "Registration Sent!");
+  setupFormHandler("careerApplicationForm", "Application Submitted!");
 
   // 5. Smooth scrolling for anchor links (offset for fixed navbar)
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

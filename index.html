@@ -583,37 +583,42 @@
           <div class="glass-form-card p-4 p-md-5 rounded-4 position-relative">
             <div class="form-glow"></div>
             <form id="contactForm" class="position-relative z-1">
+              <!-- FormSubmit configuration -->
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_subject" value="New Business Inquiry - SemiGrid Corporate">
+              <input type="hidden" name="_template" value="table">
+
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label text-light-gray small">Full Name</label>
-                  <input type="text" class="form-control custom-input" placeholder="John Doe" required />
+                  <input type="text" name="name" class="form-control custom-input" placeholder="John Doe" required />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label text-light-gray small">Company Name</label>
-                  <input type="text" class="form-control custom-input" placeholder="Company Ltd." required />
+                  <input type="text" name="company" class="form-control custom-input" placeholder="Company Ltd." required />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label text-light-gray small">Email Address</label>
-                  <input type="email" class="form-control custom-input" placeholder="john@company.com" required />
+                  <input type="email" name="email" class="form-control custom-input" placeholder="john@company.com" required />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label text-light-gray small">Phone Number</label>
-                  <input type="tel" class="form-control custom-input" placeholder="+1 (555) 000-0000" />
+                  <input type="tel" name="phone" class="form-control custom-input" placeholder="+1 (555) 000-0000" />
                 </div>
                 <div class="col-12">
                   <label class="form-label text-light-gray small">Service Required</label>
-                  <select class="form-select custom-input text-light-gray">
-                    <option selected>Select Service...</option>
-                    <option value="1">Physical Design</option>
-                    <option value="2">DFT</option>
-                    <option value="3">Design Verification</option>
-                    <option value="4">Synthesis & STA</option>
-                    <option value="5">Other</option>
+                  <select name="service" class="form-select custom-input text-light-gray">
+                    <option value="" disabled selected>Select Service...</option>
+                    <option value="Physical Design">Physical Design</option>
+                    <option value="DFT">DFT</option>
+                    <option value="Design Verification">Design Verification</option>
+                    <option value="Synthesis & STA">Synthesis & STA</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
                 <div class="col-12">
                   <label class="form-label text-light-gray small">Message</label>
-                  <textarea class="form-control custom-input" rows="4"
+                  <textarea name="message" class="form-control custom-input" rows="4"
                     placeholder="Tell us about your project requirements..." required></textarea>
                 </div>
                 <div class="col-12 mt-4">
