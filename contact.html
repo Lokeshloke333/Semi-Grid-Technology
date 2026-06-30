@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Contact Us - SemiGrid</title>
+   <meta name="description" content="Get in touch with SemiGrid experts for VLSI training and consulting." />
+
+   <!-- Google Fonts: Inter -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+   <!-- Bootstrap 5 CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+   <!-- Font Awesome Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+   <!-- AOS Animation CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="style.css" />
+
+   <!-- Web Components -->
+   <script src="components.js"></script>
+</head>
+
+<!-- Added bg-white to ensure body is white -->
+
+<body class="bg-white text-dark" style="background-color: #ffffff !important; color: #333333 !important;">
+   <!-- ================= NAVBAR ================= -->
+   <app-header></app-header>
+
+   <!-- ================= HERO / BREADCRUMB SECTION ================= -->
+   <section class="contact-hero d-flex align-items-center position-relative">
+      <div class="particles-container" id="particles"></div>
+      <div class="contact-hero-bg"></div>
+      <!-- Floating chip patterns -->
+      <div class="floating-chip chip-1"><i class="fa-solid fa-microchip"></i></div>
+      <div class="floating-chip chip-2"><i class="fa-solid fa-memory"></i></div>
+
+      <div class="container position-relative z-1 text-center" data-aos="fade-up" data-aos-duration="1000">
+         <h1 class="display-3 fw-bold text-white mb-3">Contact <span class="text-gradient">Us</span></h1>
+         <p class="lead text-light-gray mb-4 max-w-700 mx-auto">
+            We're here to help you build your career in VLSI. Get in touch with our experts today.
+         </p>
+         <div class="breadcrumb-custom">
+            <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right mx-2 text-primary text-opacity-75 fs-6"
+               style="font-size: 0.8rem !important;"></i> <span>Contact</span>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= CONTACT INFORMATION SECTION ================= -->
+   <section class="contact-info-cards py-5 bg-white">
+      <div class="container pt-5">
+         <div class="text-center mb-5" data-aos="fade-up">
+            <span class="badge-light mb-2 text-primary">CONTACT INFO</span>
+            <h2 class="section-title text-dark fw-bold mb-3">
+               Get In <span class="text-primary">Touch</span>
+            </h2>
+            <p class="text-muted max-w-700 mx-auto">
+               Reach out to our experts for inquiries, support, or career guidance.
+            </p>
+         </div>
+         <div class="row g-4">
+            <!-- Visit Us -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+               <div class="contact-info-card light-info-card h-100 text-center p-4 rounded-4 shadow-sm"
+                  style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+                  <div class="contact-card-icon mx-auto mb-3 bg-primary-light text-primary">
+                     <i class="fa-solid fa-building"></i>
+                  </div>
+                  <h5 class="text-dark fw-bold mb-2">Visit Us</h5>
+                  <p class="text-muted small mb-0">Electronic City, Bangalore, Karnataka 560100</p>
+               </div>
+            </div>
+            <!-- Phone -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+               <div class="contact-info-card light-info-card h-100 text-center p-4 rounded-4 shadow-sm"
+                  style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+                  <div class="contact-card-icon mx-auto mb-3 bg-success-light text-success">
+                     <i class="fa-solid fa-phone-volume"></i>
+                  </div>
+                  <h5 class="text-dark fw-bold mb-2">Phone</h5>
+                  <p class="text-muted small mb-0">9494941120</p>
+               </div>
+            </div>
+            <!-- Email -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+               <div class="contact-info-card light-info-card h-100 text-center p-4 rounded-4 shadow-sm"
+                  style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+                  <div class="contact-card-icon mx-auto mb-3 bg-purple-light text-purple" style="color: #6f42c1;">
+                     <i class="fa-solid fa-envelope-open-text"></i>
+                  </div>
+                  <h5 class="text-dark fw-bold mb-2">Email</h5>
+                  <p class="text-muted small mb-0">Support@semigridtechnologies.com</p>
+               </div>
+            </div>
+            <!-- Working Hours -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+               <div class="contact-info-card light-info-card h-100 text-center p-4 rounded-4 shadow-sm"
+                  style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+                  <div class="contact-card-icon mx-auto mb-3 bg-warning-light text-warning">
+                     <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <h5 class="text-dark fw-bold mb-2">Working Hours</h5>
+                  <p class="text-muted small mb-0">Monday – Saturday<br>9:00 AM - 6:00 PM (Sunday Closed)</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================= CONTACT FORM SECTION ================= -->
+   <section class="contact-form-section py-5 bg-white">
+      <div class="container py-5">
+         <div class="text-center mb-5" data-aos="fade-up">
+            <span class="badge-light mb-2 text-primary">SEND MESSAGE</span>
+            <h2 class="section-title text-dark fw-bold mb-3">
+               Drop Us a <span class="text-primary">Line</span>
+            </h2>
+            <p class="text-muted max-w-700 mx-auto">
+               Fill out the form below and our team will get back to you shortly.
+            </p>
+         </div>
+         <div class="glass-form-card light-card rounded-4 p-4 p-md-5 position-relative overflow-hidden shadow-sm"
+            data-aos="fade-up" style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+            <div class="row g-5 align-items-stretch position-relative z-1">
+               <!-- Left Side (Image Only) -->
+               <div class="col-lg-5">
+                  <div class="contact-illustration h-100">
+                     <img src="images/about_semigrid.png" alt="Contact Support"
+                        class="w-100 h-100 rounded-4 shadow-sm border border-secondary border-opacity-10"
+                        style="object-fit: cover;" />
+                  </div>
+               </div>
+               <!-- Right Side (Form) -->
+               <div class="col-lg-7">
+                  <h4 class="text-dark fw-bold mb-4">Contact Us</h4>
+                  <form id="trainingContactForm">
+                     <div class="row g-4">
+                        <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                           <input type="text" class="form-control custom-input light-input with-icon"
+                              placeholder="Your Name *" required />
+                           <i class="fa-regular fa-user input-icon"></i>
+                        </div>
+                        <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                           <input type="email" class="form-control custom-input light-input with-icon"
+                              placeholder="Email Address *" required />
+                           <i class="fa-regular fa-envelope input-icon"></i>
+                        </div>
+                        <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                           <input type="tel" class="form-control custom-input light-input with-icon"
+                              placeholder="Phone Number *" required />
+                           <i class="fa-solid fa-phone input-icon"></i>
+                        </div>
+                        <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                           <select class="form-select custom-input light-input with-icon text-muted" required>
+                              <option value="" disabled selected>Course *</option>
+                              <option value="physical-design">Physical Design</option>
+                              <option value="dft">Design for Test (DFT)</option>
+                              <option value="dv">Design Verification</option>
+                              <option value="synthesis">Synthesis & STA</option>
+                           </select>
+                           <i class="fa-solid fa-graduation-cap input-icon"></i>
+                        </div>
+                        <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                           <input type="text" class="form-control custom-input light-input with-icon"
+                              placeholder="College Name" />
+                           <i class="fa-solid fa-building-columns input-icon"></i>
+                        </div>
+                        <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                           <select class="form-select custom-input light-input with-icon text-muted">
+                              <option value="" disabled selected>Qualification</option>
+                              <option value="btech">B.Tech / B.E.</option>
+                              <option value="mtech">M.Tech / M.E.</option>
+                              <option value="bsc">B.Sc / M.Sc Electronics</option>
+                              <option value="other">Other</option>
+                           </select>
+                           <i class="fa-solid fa-award input-icon"></i>
+                        </div>
+                        <div class="col-12 position-relative input-group-custom light-icon-group">
+                           <select class="form-select custom-input light-input with-icon text-muted">
+                              <option value="" disabled selected>Training Location</option>
+                              <option value="online">Online</option>
+                              <option value="bangalore">Bangalore Campus</option>
+                              <option value="hyderabad">Hyderabad Campus</option>
+                           </select>
+                           <i class="fa-solid fa-map-location-dot input-icon"></i>
+                        </div>
+                        <div class="col-12 position-relative input-group-custom light-icon-group">
+                           <textarea class="form-control custom-input light-input with-icon" rows="4"
+                              placeholder="Write Your Message *" required></textarea>
+                           <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                        </div>
+                        <div class="col-12 mt-4">
+                           <button type="submit"
+                              class="btn btn-primary-gradient w-100 rounded-3 py-3 fw-bold btn-hover-effect">
+                              <span class="d-flex align-items-center justify-content-center">
+                                 Send Message <i class="fa-regular fa-paper-plane ms-2"></i>
+                              </span>
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+            <!-- Bottom Section (Have Questions & Badges Full Width) -->
+            <div class="row mt-5 pt-4 border-top position-relative z-1">
+               <div class="col-12 text-center">
+                  <h3 class="text-dark fw-bold mb-3">Have Questions?</h3>
+                  <p class="text-muted mb-4 max-w-700 mx-auto">
+                     We're always happy to help you choose the right VLSI training program. Our counselors will get back
+                     to you shortly.
+                  </p>
+                  <div class="feature-badges d-flex flex-wrap gap-2 justify-content-center">
+                     <span class="badge-light-custom"><i class="fa-solid fa-bolt text-warning me-2"></i> Quick
+                        Response</span>
+                     <span class="badge-light-custom"><i class="fa-solid fa-compass text-primary me-2"></i> Career
+                        Guidance</span>
+                     <span class="badge-light-custom"><i class="fa-solid fa-user-tie text-success me-2"></i> Industry
+                        Experts</span>
+                     <span class="badge-light-custom"><i class="fa-solid fa-briefcase text-info me-2"></i> Placement
+                        Assistance</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- ================= FULL WIDTH GOOGLE MAP ================= -->
+   <section class="map-section container pb-5 bg-white" data-aos="fade-up">
+      <div class="map-container rounded-4 overflow-hidden shadow-lg border border-secondary border-opacity-10 bg-white">
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.1428514101115!2d-121.89531878469376!3d37.36270637983637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcc8d5f309a67%3A0xc6222bfa406bd283!2sSan%20Jose%2C%20CA%2095131%2C%20USA!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+   </section>
+
+   <!-- ================= FOOTER ================= -->
+   <app-footer></app-footer>
+
+   <!-- Scripts -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="script.js"></script>
+</body>
+
+</html>

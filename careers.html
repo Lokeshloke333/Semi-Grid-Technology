@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers - SemiGrid</title>
+  <meta name="description" content="Join our team and help shape the future of semiconductor innovation." />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Web Components -->
+  <script src="components.js"></script>
+</head>
+
+<body class="bg-white text-dark" style="background-color: #ffffff !important; color: #333333 !important;">
+  <!-- ================= NAVBAR ================= -->
+  <app-header></app-header>
+
+  <!-- ================= HERO / BREADCRUMB SECTION ================= -->
+  <section class="contact-hero d-flex align-items-center position-relative">
+    <div class="particles-container" id="particles"></div>
+    <div class="contact-hero-bg"></div>
+    <!-- Floating chip patterns -->
+    <div class="floating-chip chip-1"><i class="fa-solid fa-microchip"></i></div>
+    <div class="floating-chip chip-2"><i class="fa-solid fa-memory"></i></div>
+    
+    <div class="container position-relative z-1 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="display-3 fw-bold text-white mb-3">Careers</h1>
+      <p class="lead text-light-gray mb-4 max-w-700 mx-auto">
+        Join our team and help shape the future of semiconductor innovation.
+      </p>
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right mx-2 text-primary text-opacity-75 fs-6" style="font-size: 0.8rem !important;"></i> <span>Careers</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CAREERS INTRODUCTION ================= -->
+  <section class="careers-intro py-5 bg-white">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="badge-light mb-2 text-primary">CAREERS</span>
+        <h2 class="section-title text-dark fw-bold mb-3">
+          Join Our Growing <span class="text-primary">Team</span>
+        </h2>
+        <p class="text-muted max-w-700 mx-auto">
+          We're always looking for passionate engineers, trainers, and professionals who want to contribute to cutting-edge VLSI training and semiconductor design services.
+        </p>
+      </div>
+      
+      <div class="feature-badges d-flex flex-wrap justify-content-center gap-3">
+        <span class="badge-light-custom" data-aos="zoom-in" data-aos-delay="100"><i class="fa-solid fa-chart-line text-primary me-2"></i> Career Growth</span>
+        <span class="badge-light-custom" data-aos="zoom-in" data-aos-delay="200"><i class="fa-solid fa-book-open text-success me-2"></i> Learning Culture</span>
+        <span class="badge-light-custom" data-aos="zoom-in" data-aos-delay="300"><i class="fa-solid fa-user-tie text-info me-2"></i> Industry Experts</span>
+        <span class="badge-light-custom" data-aos="zoom-in" data-aos-delay="400"><i class="fa-solid fa-mug-hot text-warning me-2"></i> Flexible Environment</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JOB APPLICATION ================= -->
+  <section class="job-application py-5 bg-light" style="background-color: #f8f9fa !important;">
+    <div class="container py-5">
+      <div class="glass-form-card light-card rounded-4 p-4 p-md-5 position-relative overflow-hidden shadow-sm" data-aos="fade-up" style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+         <div class="row g-5 align-items-stretch position-relative z-1">
+            <!-- Left Side (Image Only) -->
+            <div class="col-lg-5">
+               <div class="contact-illustration h-100">
+                  <img src="images/about_semigrid.png" alt="Join Our Team" class="w-100 h-100 rounded-4 shadow-sm border border-secondary border-opacity-10" style="object-fit: cover;" />
+               </div>
+            </div>
+            
+            <!-- Right Side (Form) -->
+            <div class="col-lg-7">
+               <h4 class="text-dark fw-bold mb-4">Submit Your Application</h4>
+               <form id="careerApplicationForm">
+                  <div class="row g-4">
+                     <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                        <input type="text" class="form-control custom-input light-input with-icon" placeholder="Enter Your Name *" required />
+                        <i class="fa-regular fa-user input-icon"></i>
+                     </div>
+                     <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                        <input type="email" class="form-control custom-input light-input with-icon" placeholder="Email Address *" required />
+                        <i class="fa-regular fa-envelope input-icon"></i>
+                     </div>
+                     <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                        <input type="tel" class="form-control custom-input light-input with-icon" placeholder="Phone Number *" required />
+                        <i class="fa-solid fa-phone input-icon"></i>
+                     </div>
+                     <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                        <select class="form-select custom-input light-input with-icon text-muted" required>
+                           <option value="" disabled selected>Domain *</option>
+                           <option value="physical-design">Physical Design</option>
+                           <option value="dft">Design for Test (DFT)</option>
+                           <option value="dv">Design Verification</option>
+                           <option value="synthesis">Synthesis & STA</option>
+                           <option value="analog">Analog Layout</option>
+                           <option value="other">Other / HR / Sales</option>
+                        </select>
+                        <i class="fa-solid fa-briefcase input-icon"></i>
+                     </div>
+                     <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                        <select class="form-select custom-input light-input with-icon text-muted" required>
+                           <option value="" disabled selected>Total Years of Experience *</option>
+                           <option value="0-2">0 - 2 Years</option>
+                           <option value="3-5">3 - 5 Years</option>
+                           <option value="5-10">5 - 10 Years</option>
+                           <option value="10+">10+ Years</option>
+                        </select>
+                        <i class="fa-solid fa-calendar-days input-icon"></i>
+                     </div>
+                     <div class="col-md-6 position-relative input-group-custom light-icon-group">
+                        <select class="form-select custom-input light-input with-icon text-muted" required>
+                           <option value="" disabled selected>Relevant Experience *</option>
+                           <option value="0-2">0 - 2 Years</option>
+                           <option value="3-5">3 - 5 Years</option>
+                           <option value="5-10">5 - 10 Years</option>
+                           <option value="10+">10+ Years</option>
+                        </select>
+                        <i class="fa-solid fa-star input-icon"></i>
+                     </div>
+                     <div class="col-12 position-relative input-group-custom light-icon-group">
+                        <input type="text" class="form-control custom-input light-input with-icon" placeholder="Last Working Day (LWD) / Notice Period *" required />
+                        <i class="fa-solid fa-clock-rotate-left input-icon"></i>
+                     </div>
+                     
+                     <!-- File Upload -->
+                     <div class="col-12">
+                       <div class="file-upload-wrapper custom-input light-input p-4 text-center rounded-3 position-relative bg-light" style="border: 2px dashed rgba(0,0,0,0.15); transition: all 0.3s ease;">
+                         <input type="file" id="resumeUpload" class="position-absolute w-100 h-100 top-0 start-0 opacity-0" style="cursor: pointer;" accept=".pdf,.doc,.docx" required />
+                         <i class="fa-solid fa-cloud-arrow-up fs-2 text-primary mb-2"></i>
+                         <h6 class="text-dark fw-bold mb-1">Upload Resume *</h6>
+                         <p class="text-muted small mb-0">Drag & drop your file here, or click to browse (PDF, DOC, DOCX)</p>
+                         <p id="fileNameDisplay" class="text-primary small fw-bold mt-2 mb-0 d-none"></p>
+                       </div>
+                     </div>
+                     
+                     <div class="col-12 position-relative input-group-custom light-icon-group">
+                        <textarea class="form-control custom-input light-input with-icon" rows="3" placeholder="Cover Letter / Message (Optional)"></textarea>
+                        <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                     </div>
+                     <div class="col-12 mt-4">
+                        <button type="submit" class="btn btn-primary-gradient w-100 rounded-3 py-3 fw-bold btn-hover-effect">
+                           <span class="d-flex align-items-center justify-content-center">
+                              Apply Now <i class="fa-regular fa-paper-plane ms-2"></i>
+                           </span>
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+         
+         <!-- Bottom Section (Why Work With Us Cards Full Width) -->
+         <div class="row mt-5 pt-4 border-top position-relative z-1">
+            <div class="col-12">
+               <h3 class="text-dark fw-bold mb-4 text-center">Why Work With Us?</h3>
+               <div class="row g-3">
+                 <div class="col-md-6 col-lg-3">
+                   <div class="d-flex align-items-center p-3 rounded-3 h-100" style="background: rgba(0, 174, 239, 0.05); border: 1px solid rgba(0, 174, 239, 0.1);">
+                     <i class="fa-solid fa-microchip fs-4 text-primary me-3"></i>
+                     <div>
+                       <h6 class="fw-bold mb-0 text-dark">Real VLSI Projects</h6>
+                       <small class="text-muted">Hands-on exposure.</small>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="d-flex align-items-center p-3 rounded-3 h-100" style="background: rgba(40, 167, 69, 0.05); border: 1px solid rgba(40, 167, 69, 0.1);">
+                     <i class="fa-solid fa-graduation-cap fs-4 text-success me-3"></i>
+                     <div>
+                       <h6 class="fw-bold mb-0 text-dark">Continuous Learning</h6>
+                       <small class="text-muted">Premium resources.</small>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="d-flex align-items-center p-3 rounded-3 h-100" style="background: rgba(111, 66, 193, 0.05); border: 1px solid rgba(111, 66, 193, 0.1);">
+                     <i class="fa-solid fa-users fs-4 text-purple me-3" style="color: #6f42c1;"></i>
+                     <div>
+                       <h6 class="fw-bold mb-0 text-dark">Industry Mentorship</h6>
+                       <small class="text-muted">Learn from experts.</small>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="d-flex align-items-center p-3 rounded-3 h-100" style="background: rgba(255, 193, 7, 0.05); border: 1px solid rgba(255, 193, 7, 0.1);">
+                     <i class="fa-solid fa-rocket fs-4 text-warning me-3"></i>
+                     <div>
+                       <h6 class="fw-bold mb-0 text-dark">Career Growth</h6>
+                       <small class="text-muted">Fast-tracked paths.</small>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY JOIN US (CARDS) ================= -->
+  <section class="why-join-us py-5 bg-white">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="badge-light mb-2 text-primary">WHY CHOOSE US</span>
+        <h2 class="section-title text-dark fw-bold mb-3">
+          Why Choose <span class="text-primary">SemiGrid?</span>
+        </h2>
+        <p class="text-muted max-w-700 mx-auto">
+          A workplace designed for innovation and excellence.
+        </p>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+           <div class="contact-info-card light-info-card h-100 p-4 rounded-4 shadow-sm" style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+              <div class="contact-card-icon mb-4 bg-primary-light text-primary mx-auto">
+                 <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+              <h5 class="text-dark fw-bold mb-2 text-center">Career Growth</h5>
+              <p class="text-muted small mb-0 text-center">Continuous professional development and clear progression paths for all engineers.</p>
+           </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+           <div class="contact-info-card light-info-card h-100 p-4 rounded-4 shadow-sm" style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+              <div class="contact-card-icon mb-4 bg-success-light text-success mx-auto">
+                 <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h5 class="text-dark fw-bold mb-2 text-center">Latest Technologies</h5>
+              <p class="text-muted small mb-0 text-center">Work with modern semiconductor methodologies and industry-standard EDA tools.</p>
+           </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+           <div class="contact-info-card light-info-card h-100 p-4 rounded-4 shadow-sm" style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+              <div class="contact-card-icon mb-4 bg-purple-light text-purple mx-auto" style="color: #6f42c1;">
+                 <i class="fa-solid fa-users"></i>
+              </div>
+              <h5 class="text-dark fw-bold mb-2 text-center">Collaborative Team</h5>
+              <p class="text-muted small mb-0 text-center">Supportive and experienced professionals ready to mentor and collaborate.</p>
+           </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+           <div class="contact-info-card light-info-card h-100 p-4 rounded-4 shadow-sm" style="background-color: #ffffff !important; border: 1px solid rgba(0,0,0,0.08);">
+              <div class="contact-card-icon mb-4 bg-warning-light text-warning mx-auto">
+                 <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <h5 class="text-dark fw-bold mb-2 text-center">Innovation Driven</h5>
+              <p class="text-muted small mb-0 text-center">Contribute to real-world VLSI solutions that shape the future of electronics.</p>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HIRING PROCESS TIMELINE ================= -->
+  <section class="hiring-process py-5 bg-light" style="background-color: #f8f9fa !important;">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="badge-light mb-2 text-primary">HIRING PROCESS</span>
+        <h2 class="section-title text-dark fw-bold mb-3">
+          Our Hiring <span class="text-primary">Process</span>
+        </h2>
+        <p class="text-muted max-w-700 mx-auto">
+          A streamlined journey to joining our team.
+        </p>
+      </div>
+      
+      <div class="timeline-container position-relative py-4" data-aos="fade-up">
+        <div class="timeline-line d-none d-lg-block position-absolute" style="top: 48px; left: 8.33%; right: 8.33%; height: 2px; background: rgba(0, 174, 239, 0.2); z-index: 0;"></div>
+        <div class="row g-4 position-relative z-1 text-center">
+          
+          <div class="col-lg-2 col-md-4 col-sm-6 timeline-step">
+            <div class="timeline-dot bg-primary text-white mx-auto shadow-sm rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; font-weight: bold; border: 4px solid #f8f9fa;">1</div>
+            <h6 class="fw-bold text-dark mb-1">Submit Application</h6>
+            <p class="small text-muted">Apply online via our portal.</p>
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-sm-6 timeline-step">
+            <div class="timeline-dot bg-white border border-2 border-primary text-primary mx-auto shadow-sm rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; font-weight: bold; border: 4px solid #f8f9fa !important;">2</div>
+            <h6 class="fw-bold text-dark mb-1">Resume Screening</h6>
+            <p class="small text-muted">Our team reviews your profile.</p>
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-sm-6 timeline-step">
+            <div class="timeline-dot bg-white border border-2 border-primary text-primary mx-auto shadow-sm rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; font-weight: bold; border: 4px solid #f8f9fa !important;">3</div>
+            <h6 class="fw-bold text-dark mb-1">Technical Interview</h6>
+            <p class="small text-muted">Assess your VLSI knowledge.</p>
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-sm-6 timeline-step">
+            <div class="timeline-dot bg-white border border-2 border-primary text-primary mx-auto shadow-sm rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; font-weight: bold; border: 4px solid #f8f9fa !important;">4</div>
+            <h6 class="fw-bold text-dark mb-1">HR Discussion</h6>
+            <p class="small text-muted">Culture fit and negotiations.</p>
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-sm-6 timeline-step">
+            <div class="timeline-dot bg-white border border-2 border-primary text-primary mx-auto shadow-sm rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; font-weight: bold; border: 4px solid #f8f9fa !important;">5</div>
+            <h6 class="fw-bold text-dark mb-1">Offer Letter</h6>
+            <p class="small text-muted">Formal offer extended to you.</p>
+          </div>
+          
+          <div class="col-lg-2 col-md-4 col-sm-6 timeline-step">
+            <div class="timeline-dot bg-success text-white mx-auto shadow-sm rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; font-weight: bold; border: 4px solid #f8f9fa;"><i class="fa-solid fa-check"></i></div>
+            <h6 class="fw-bold text-dark mb-1">Welcome Onboard</h6>
+            <p class="small text-muted">Start your journey with us.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="faq-section py-5 bg-white">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <span class="badge-light mb-2 text-primary">FAQ</span>
+            <h2 class="section-title text-dark fw-bold mb-3">
+              Frequently Asked <span class="text-primary">Questions</span>
+            </h2>
+            <p class="text-muted max-w-700 mx-auto">
+              Everything you need to know about working with us.
+            </p>
+          </div>
+          
+          <div class="accordion custom-accordion shadow-sm rounded-4 overflow-hidden" id="careersFaq" data-aos="fade-up" data-aos-delay="100" style="border: 1px solid rgba(0,0,0,0.08);">
+            
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white text-dark fw-bold collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                  Can freshers apply?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#careersFaq">
+                <div class="accordion-body text-muted bg-white pb-4 pt-0">
+                  Yes, we frequently hire freshers who have completed our training programs or demonstrate strong foundational knowledge in VLSI design during our technical evaluations.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white text-dark fw-bold collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  How long does the hiring process take?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#careersFaq">
+                <div class="accordion-body text-muted bg-white pb-4 pt-0">
+                  Typically, our hiring process takes 1-2 weeks from the initial resume screening to the final offer, depending on the role and candidate availability.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white text-dark fw-bold collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  Is remote work available?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#careersFaq">
+                <div class="accordion-body text-muted bg-white pb-4 pt-0">
+                  We offer a flexible work environment. While some roles require on-site collaboration at our Bangalore or Hyderabad offices, many roles offer hybrid or fully remote options.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white text-dark fw-bold collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  What documents should I submit?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#careersFaq">
+                <div class="accordion-body text-muted bg-white pb-4 pt-0">
+                  For the initial application, an updated resume (PDF or Word format) is sufficient. A cover letter is optional but highly recommended.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white text-dark fw-bold collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                  How will I know my application status?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#careersFaq">
+                <div class="accordion-body text-muted bg-white pb-4 pt-0">
+                  Our HR team will proactively reach out to you via email or phone within 48-72 hours if your profile is shortlisted for an interview.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA SECTION ================= -->
+  <section class="final-cta py-5 position-relative overflow-hidden">
+    <!-- Premium dark gradient background matching brand -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, var(--deep-blue) 0%, var(--dark-navy) 100%); z-index: -2;"></div>
+    <!-- Subtle decorative pattern -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 contact-hero-bg" style="z-index: -1;"></div>
+    
+    <div class="container py-5 text-center position-relative z-1" data-aos="zoom-in">
+      <h2 class="display-5 fw-bold text-white mb-3">Ready to Build Your Career?</h2>
+      <p class="lead text-light-gray mb-5 max-w-700 mx-auto">
+        Take the next step in your professional journey by joining our growing VLSI team.
+      </p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <a href="#careerApplicationForm" class="btn btn-primary-gradient rounded-3 px-5 py-3 fw-bold shadow-lg btn-hover-effect">
+          Apply Today <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+        <a href="contact.html" class="btn btn-outline-light rounded-3 px-5 py-3 fw-bold">
+          Contact HR
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <app-footer></app-footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Simple script for File Upload interaction
+    document.addEventListener('DOMContentLoaded', () => {
+      const fileInput = document.getElementById('resumeUpload');
+      const fileWrapper = document.querySelector('.file-upload-wrapper');
+      const fileNameDisplay = document.getElementById('fileNameDisplay');
+      
+      if (fileInput) {
+        fileInput.addEventListener('change', function(e) {
+          if (e.target.files.length > 0) {
+            fileNameDisplay.textContent = 'Selected: ' + e.target.files[0].name;
+            fileNameDisplay.classList.remove('d-none');
+            fileWrapper.style.borderColor = 'var(--bs-primary)';
+            fileWrapper.style.backgroundColor = 'rgba(0, 174, 239, 0.05)';
+          } else {
+            fileNameDisplay.classList.add('d-none');
+            fileWrapper.style.borderColor = 'rgba(0,0,0,0.15)';
+            fileWrapper.style.backgroundColor = 'transparent';
+          }
+        });
+        
+        // Drag and drop styles
+        fileInput.addEventListener('dragenter', () => {
+          fileWrapper.style.borderColor = 'var(--bs-primary)';
+          fileWrapper.style.backgroundColor = 'rgba(0, 174, 239, 0.05)';
+        });
+        fileInput.addEventListener('dragleave', () => {
+          if (fileInput.files.length === 0) {
+            fileWrapper.style.borderColor = 'rgba(0,0,0,0.15)';
+            fileWrapper.style.backgroundColor = 'rgba(248, 249, 250, 1)';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
