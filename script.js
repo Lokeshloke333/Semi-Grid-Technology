@@ -147,7 +147,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setupFormHandler("contactForm", "Message Sent!");
   setupFormHandler("trainingContactForm", "Registration Sent!");
-  setupFormHandler("careerApplicationForm", "Application Submitted!");
+
+  // Custom form handler for Careers Form to support file attachments via standard redirect
+  const careersForm = document.getElementById("careerApplicationForm");
+  if (careersForm) {
+    // 1. Dynamically set the redirection target to return the user to this page
+    const nextUrlInput = document.getElementById("nextUrlInput");
+    if (nextUrlInput) {
+      // Set to current URL with submitted=true query parameter
+      nextUrlInput.value = window.location.origin + window.location.pathname + "?submitted=true";
+    }
+
+    careersForm.addEventListener("submit", () => {
+      const btn = careersForm.querySelector('button[type="submit"]');
+      if (btn) {
+        btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin me-2"></i> Submitting Application...';
+        btn.style.pointerEvents = 'none';
+      }
+    });
+
+    // 3. Check if we just redirected back after a successful submission
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("submitted") === "true") {
+      const successAlert = document.getElementById("successAlert");
+      if (successAlert) {
+        successAlert.classList.remove("d-none");
+        successAlert.scrollIntoView({ behavior: "smooth", block: "center" });
+        
+        // Clean up the URL query parameter without page reload
+        if (window.history && window.history.replaceState) {
+          const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+          window.history.replaceState({}, document.title, cleanUrl);
+        }
+      }
+    }
+  }
 
   // 5. Smooth scrolling for anchor links (offset for fixed navbar)
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
