@@ -1142,6 +1142,10 @@ select.custom-input option {
     overflow: hidden;
 }
 
+.contact-hero h1 {
+    font-size: 3rem !important;
+}
+
 .contact-hero-bg {
     position: absolute;
     top: 0;

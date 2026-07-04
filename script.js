@@ -78,10 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      
+
       const btn = form.querySelector('button[type="submit"]');
       if (!btn) return;
-      
+
       const originalText = btn.innerHTML;
       btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin me-2"></i> Sending...';
       btn.disabled = true;
@@ -90,58 +90,58 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = new FormData(form);
 
       // Perform fetch to FormSubmit
-      fetch("https://formsubmit.co/ajax/lokeshvanumu61@gmail.com", {
+      fetch("https://formsubmit.co/ajax/hr@semigridtechnologies.com", {
         method: "POST",
         body: formData,
         headers: {
           'Accept': 'application/json'
         }
       })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        btn.innerHTML = `<i class="fa-solid fa-check me-2"></i> ${successMessage}`;
-        btn.classList.remove("btn-primary-gradient");
-        btn.classList.add("btn-success");
-        form.reset();
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          btn.innerHTML = `<i class="fa-solid fa-check me-2"></i> ${successMessage}`;
+          btn.classList.remove("btn-primary-gradient");
+          btn.classList.add("btn-success");
+          form.reset();
 
-        // If the form has a file upload name display, reset it
-        const fileNameDisplay = document.getElementById("fileNameDisplay");
-        if (fileNameDisplay) {
-          fileNameDisplay.classList.add("d-none");
-          fileNameDisplay.textContent = "";
-        }
-        // If file wrapper styled, reset it
-        const fileWrapper = document.querySelector(".file-upload-wrapper");
-        if (fileWrapper) {
-          fileWrapper.style.borderColor = "rgba(0,0,0,0.15)";
-          fileWrapper.style.backgroundColor = "rgba(248, 249, 250, 1)";
-        }
+          // If the form has a file upload name display, reset it
+          const fileNameDisplay = document.getElementById("fileNameDisplay");
+          if (fileNameDisplay) {
+            fileNameDisplay.classList.add("d-none");
+            fileNameDisplay.textContent = "";
+          }
+          // If file wrapper styled, reset it
+          const fileWrapper = document.querySelector(".file-upload-wrapper");
+          if (fileWrapper) {
+            fileWrapper.style.borderColor = "rgba(0,0,0,0.15)";
+            fileWrapper.style.backgroundColor = "rgba(248, 249, 250, 1)";
+          }
 
-        setTimeout(() => {
-          btn.innerHTML = originalText;
-          btn.classList.add("btn-primary-gradient");
-          btn.classList.remove("btn-success");
-          btn.disabled = false;
-        }, 4000);
-      })
-      .catch(error => {
-        console.error("Form submission error:", error);
-        btn.innerHTML = '<i class="fa-solid fa-circle-xmark me-2"></i> Failed to Send';
-        btn.classList.remove("btn-primary-gradient");
-        btn.classList.add("btn-danger");
-        
-        setTimeout(() => {
-          btn.innerHTML = originalText;
-          btn.classList.add("btn-primary-gradient");
-          btn.classList.remove("btn-danger");
-          btn.disabled = false;
-        }, 4000);
-      });
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.add("btn-primary-gradient");
+            btn.classList.remove("btn-success");
+            btn.disabled = false;
+          }, 4000);
+        })
+        .catch(error => {
+          console.error("Form submission error:", error);
+          btn.innerHTML = '<i class="fa-solid fa-circle-xmark me-2"></i> Failed to Send';
+          btn.classList.remove("btn-primary-gradient");
+          btn.classList.add("btn-danger");
+
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.add("btn-primary-gradient");
+            btn.classList.remove("btn-danger");
+            btn.disabled = false;
+          }, 4000);
+        });
     });
   };
 
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (successAlert) {
         successAlert.classList.remove("d-none");
         successAlert.scrollIntoView({ behavior: "smooth", block: "center" });
-        
+
         // Clean up the URL query parameter without page reload
         if (window.history && window.history.replaceState) {
           const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
