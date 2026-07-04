@@ -4,10 +4,7 @@ class AppHeader extends HTMLElement {
       <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="navbar">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <div class="logo-icon me-2">
-              <i class="fa-solid fa-microchip"></i>
-            </div>
-            <span class="brand-text fw-bold">SemiGrid</span>
+            <img src="images/Logo.svg" alt="SemiGrid Logo" style="height: 50px; width: auto;" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,10 +77,7 @@ class AppFooter extends HTMLElement {
           <div class="row g-4 mb-5">
             <div class="col-lg-4 pe-lg-5">
               <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
-                <div class="logo-icon me-2">
-                  <i class="fa-solid fa-microchip"></i>
-                </div>
-                <span class="brand-text fw-bold text-white fs-4">SemiGrid</span>
+                <img src="images/Logo.svg" alt="SemiGrid Logo" style="height: 60px; width: auto;" />
               </a>
               <p class="text-light-gray small mb-4">
                 Delivering excellence in VLSI engineering and semiconductor design

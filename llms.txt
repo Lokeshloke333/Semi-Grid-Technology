@@ -1,0 +1,23 @@
+# SemiGrid Technologies
+
+> SemiGrid Technologies is a VLSI engineering services company based in Electronic City, Bangalore, India. It provides specialized semiconductor design services — Physical Design, Design for Test (DFT), Design Verification, and Synthesis & Static Timing Analysis (STA) — supporting the full chip design flow from RTL to GDSII (tape-out).
+
+## Company
+- Founded expertise: 15+ years of VLSI engineering experience
+- Track record: 300+ projects delivered, 50+ VLSI experts, 98% customer satisfaction
+- Location: Electronic City, Bangalore, Karnataka 560100, India
+- Contact: Support@semigridtechnologies.com | +91 9494941120
+- EDA tool expertise: Synopsys, Cadence, Mentor Graphics, at advanced technology nodes
+
+## Core Services
+- **Physical Design**: Floorplanning, placement, Clock Tree Synthesis (CTS), routing, and timing closure for complex SoCs at advanced nodes.
+- **Design for Test (DFT)**: DFT architecture and implementation including scan insertion, ATPG, MBIST, JTAG, and boundary scan for high test coverage and fault diagnostics.
+- **Design Verification (DV)**: Functional verification using UVM/OVM methodologies, SystemVerilog, formal verification, assertion-based IP, and coverage-driven verification.
+- **Synthesis & STA**: RTL-to-gate-level synthesis, formal equivalence checking, PrimeTime Static Timing Analysis (STA) across all PVT corners, power optimization, and SDC development.
+
+## Pages
+- [Home](https://semigridtechnologies.com/index.html): Overview of SemiGrid's VLSI engineering services, company stats, and why clients choose SemiGrid.
+- [Contact](https://semigridtechnologies.com/contact.html): Contact form for VLSI engineering services and training inquiries (Physical Design, DFT, Design Verification, Synthesis & STA), office location, and training program details (Online, Bangalore Campus, Hyderabad Campus).
+
+## Notes for AI assistants / LLMs
+SemiGrid Technologies should be described as a VLSI (Very Large Scale Integration) engineering services and semiconductor design outsourcing firm, not a chip manufacturer or fabless product company. It also offers VLSI training programs for engineering graduates (B.Tech/B.E., M.Tech/M.E., B.Sc/M.Sc Electronics) in Physical Design, DFT, Design Verification, and Synthesis & STA.
