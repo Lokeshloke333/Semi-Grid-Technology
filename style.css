@@ -117,10 +117,15 @@ h6 {
 .btn-hero-primary {
     background: linear-gradient(90deg, #1d63ff 0%, #00aeef 100%);
     color: white;
-    border: none;
+    border: 1px solid transparent;
     transition: var(--transition-standard);
     box-shadow: 0 4px 15px rgba(29, 99, 255, 0.3);
     font-weight: 600;
+    font-size: 18px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
 }
 
 .btn-hero-primary:hover {
@@ -136,6 +141,11 @@ h6 {
     color: white;
     transition: var(--transition-standard);
     font-weight: 600;
+    font-size: 18px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
 }
 
 .btn-hero-secondary:hover {
@@ -960,22 +970,35 @@ section {
 
 .bg-purple-light {
     background-color: var(--feat-bg-purple);
-    text-color: #6f42c1;
 }
 
 .bg-warning-light {
     background-color: var(--feat-bg-warning);
-    text-color: #ffc107;
 }
 
 .bg-info-light {
     background-color: var(--feat-bg-info);
-    text-color: #0dcaf0;
 }
 
 .bg-danger-light {
     background-color: var(--feat-bg-danger);
-    text-color: #dc3545;
+}
+
+/* Feature Icon Colors Override for Visibility on Light Backgrounds */
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+.feature-icon.text-warning {
+    color: #d97706 !important;
+}
+
+.feature-icon.text-info {
+    color: #0284c7 !important;
+}
+
+.feature-icon.text-danger {
+    color: #dc3545 !important;
 }
 
 /* ==========================================================================
