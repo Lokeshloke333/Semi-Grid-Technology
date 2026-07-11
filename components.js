@@ -84,6 +84,11 @@ class AppFooter extends HTMLElement {
                 services from RTL to Silicon. Partner with us to accelerate your
                 tape-outs.
               </p>
+              <div class="social-links mt-4">
+                <div class="d-flex gap-3">
+                  <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
             </div>
 
             <div class="col-lg-2 col-md-4">
@@ -117,7 +122,7 @@ class AppFooter extends HTMLElement {
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa-solid fa-phone text-primary me-3 fs-5"></i>
-                  <span>9494941120</span>
+                  <span>9912128211</span>
                 </div>
                 <div class="d-flex align-items-start">
                   <i class="fa-solid fa-location-dot text-primary me-3 fs-5 mt-1"></i>
