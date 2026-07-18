@@ -1,29 +1,139 @@
-# robots.txt for semigridtechnologies.com
+# robots.txt for https://semigridtechnologies.com/
+# Last updated: 2026-07-18
+# Maintained per Google, Bing, and AI-crawler (GEO/AEO/LLMO) best practices
 
-User-agent: *
+# ============================
+# TRADITIONAL SEARCH ENGINES
+# ============================
+
+User-agent: Googlebot
+Allow: /
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /*?s=
+Disallow: /*?p=
+Disallow: /search/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /student-login/
+Disallow: /lms/
+Disallow: /staging/
+Disallow: /dev/
+Disallow: /test/
+
+User-agent: Googlebot-Image
 Allow: /
 
-# AI / LLM crawlers - allowed so SemiGrid's VLSI service pages
-# can be cited by AI answer engines and chat assistants
+User-agent: Bingbot
+Allow: /
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /search/
+Disallow: /lms/
+Disallow: /staging/
+Disallow: /dev/
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# ============================
+# AI / LLM CRAWLERS (GEO/AEO/LLMO)
+# ============================
+
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ============================
+# BLOCK LOW-VALUE / DUPLICATE / ADMIN / STUDENT PORTAL PATHS (ALL BOTS)
+# ============================
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /cgi-bin/
+Disallow: /*?s=
+Disallow: /*?p=
+Disallow: /*?replytocom=
+Disallow: /search/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /student-login/
+Disallow: /lms/
+Disallow: /staging/
+Disallow: /dev/
+Disallow: /test/
+Disallow: /*?utm_
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+Disallow: /404
+Disallow: /thank-you/
+Disallow: /*.json$
+
+# ============================
+# SITEMAPS
+# ============================
+
 Sitemap: https://semigridtechnologies.com/sitemap.xml
+Sitemap: https://semigridtechnologies.com/sitemap-images.xml
+
+# ============================
+# LLMS.TXT REFERENCE (for AI agents)
+# ============================
+# See: https://semigridtechnologies.com/llms.txt

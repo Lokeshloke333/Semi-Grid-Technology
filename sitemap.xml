@@ -1,53 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap for https://semigridtechnologies.com/
+  NOTE: URL slugs are best-practice suggestions based on the services you listed.
+  Replace with your ACTUAL live URLs before deploying.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://semigridtechnologies.com/index.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://semigridtechnologies.com/</loc><lastmod>2026-07-18</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
 
-  <url>
-    <loc>https://semigridtechnologies.com/contact.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://semigridtechnologies.com/about-us/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!--
-    Add entries below once you create dedicated service landing pages.
-    Splitting Physical Design / DFT / Design Verification / Synthesis & STA
-    into their own URLs (instead of anchors on index.html) will let each
-    one rank for its own keyword set. Example entries:
+  <url><loc>https://semigridtechnologies.com/services/</loc><lastmod>2026-07-18</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 
-  <url>
-    <loc>https://semigridtechnologies.com/physical-design.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <url><loc>https://semigridtechnologies.com/services/vlsi-physical-design/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
 
-  <url>
-    <loc>https://semigridtechnologies.com/design-for-test-dft.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <url><loc>https://semigridtechnologies.com/services/asic-physical-design/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
 
-  <url>
-    <loc>https://semigridtechnologies.com/design-verification.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <url><loc>https://semigridtechnologies.com/services/rtl-to-gdsii/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
-  <url>
-    <loc>https://semigridtechnologies.com/synthesis-sta.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  -->
+  <url><loc>https://semigridtechnologies.com/services/design-verification/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/dft/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/synthesis-sta/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/floorplanning/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/placement-cts/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/routing-signoff/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/timing-closure/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/power-analysis/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/physical-verification/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/embedded-systems/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/fpga-development/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/services/semiconductor-consulting/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/training/</loc><lastmod>2026-07-18</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/training/corporate-training/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/training/online-training/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/internship-program/</loc><lastmod>2026-07-18</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/placement-assistance/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/careers/</loc><lastmod>2026-07-18</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/blog/</loc><lastmod>2026-07-18</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/contact-us/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/faq/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/privacy-policy/</loc><lastmod>2026-07-18</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <url><loc>https://semigridtechnologies.com/terms-and-conditions/</loc><lastmod>2026-07-18</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
 </urlset>
+
+<!--
+NOTE ON 404: do NOT list the 404 page in sitemap.xml. Ensure /404/ returns an
+actual HTTP 404 status code (not 200) rather than being submitted for indexing.
+-->

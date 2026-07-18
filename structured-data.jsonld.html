@@ -1,0 +1,176 @@
+<!--
+  STRUCTURED DATA — Semigrid Technologies
+  Place the first <script> in the <head> of your homepage. Adapt WebPage/Breadcrumb
+  per inner page. Only include FAQPage schema on pages where that FAQ text is visibly
+  rendered in the page HTML. Replace all [FILL-IN] placeholders before deploying.
+  Validate at https://validator.schema.org/ and https://search.google.com/test/rich-results
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://semigridtechnologies.com/#organization",
+      "name": "Semigrid Technologies",
+      "url": "https://semigridtechnologies.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://semigridtechnologies.com/[FILL-IN: logo-path].png",
+        "width": "512",
+        "height": "512"
+      },
+      "description": "Semigrid Technologies provides VLSI physical design, ASIC physical design, RTL-to-GDSII, design verification, DFT, synthesis & STA, embedded systems, and FPGA development engineering services, plus corporate/online training, internship programs, and placement assistance.",
+      "sameAs": [
+        "https://www.linkedin.com/company/[FILL-IN]",
+        "https://twitter.com/[FILL-IN]",
+        "https://www.facebook.com/[FILL-IN]",
+        "https://www.youtube.com/[FILL-IN]",
+        "https://www.instagram.com/[FILL-IN]"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "[FILL-IN: +91-XXXXXXXXXX]",
+          "contactType": "customer service",
+          "email": "[FILL-IN: info@semigridtechnologies.com]",
+          "areaServed": "IN",
+          "availableLanguage": ["English"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "[FILL-IN]",
+          "contactType": "sales",
+          "email": "[FILL-IN: sales@semigridtechnologies.com]",
+          "areaServed": "Worldwide",
+          "availableLanguage": ["English"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "[FILL-IN]",
+          "contactType": "admissions",
+          "email": "[FILL-IN: training@semigridtechnologies.com]",
+          "areaServed": "IN",
+          "availableLanguage": ["English"]
+        }
+      ]
+    },
+    {
+      "@type": ["ProfessionalService", "LocalBusiness"],
+      "@id": "https://semigridtechnologies.com/#localbusiness",
+      "name": "Semigrid Technologies",
+      "image": "https://semigridtechnologies.com/[FILL-IN: logo-path].png",
+      "url": "https://semigridtechnologies.com/",
+      "telephone": "[FILL-IN]",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[FILL-IN]",
+        "addressLocality": "[FILL-IN city]",
+        "addressRegion": "[FILL-IN state]",
+        "postalCode": "[FILL-IN]",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "[FILL-IN]",
+        "longitude": "[FILL-IN]"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:30",
+        "closes": "18:30"
+      },
+      "parentOrganization": { "@id": "https://semigridtechnologies.com/#organization" }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://semigridtechnologies.com/#educationalorganization",
+      "name": "Semigrid Technologies Training",
+      "url": "https://semigridtechnologies.com/training/",
+      "description": "Corporate, online, and internship training programs in VLSI physical design, ASIC design, design verification, DFT, STA, and embedded systems, with placement assistance.",
+      "parentOrganization": { "@id": "https://semigridtechnologies.com/#organization" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://semigridtechnologies.com/#website",
+      "url": "https://semigridtechnologies.com/",
+      "name": "Semigrid Technologies",
+      "publisher": { "@id": "https://semigridtechnologies.com/#organization" },
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://semigridtechnologies.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://semigridtechnologies.com/#webpage",
+      "url": "https://semigridtechnologies.com/",
+      "name": "Semigrid Technologies | VLSI Physical Design, ASIC Design & Semiconductor Engineering Services",
+      "isPartOf": { "@id": "https://semigridtechnologies.com/#website" },
+      "about": { "@id": "https://semigridtechnologies.com/#organization" },
+      "description": "VLSI physical design, ASIC design, RTL-to-GDSII, verification, DFT, STA services plus VLSI training, internships, and placement assistance.",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://semigridtechnologies.com/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://semigridtechnologies.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://semigridtechnologies.com/services/" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://semigridtechnologies.com/#services",
+      "name": "Semigrid Technologies Services",
+      "itemListElement": [
+        { "@type": "Service", "position": 1, "name": "VLSI Physical Design", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/vlsi-physical-design/" },
+        { "@type": "Service", "position": 2, "name": "ASIC Physical Design", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/asic-physical-design/" },
+        { "@type": "Service", "position": 3, "name": "RTL to GDSII Design Flow", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/rtl-to-gdsii/" },
+        { "@type": "Service", "position": 4, "name": "Design Verification", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/design-verification/" },
+        { "@type": "Service", "position": 5, "name": "DFT (Design for Test)", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/dft/" },
+        { "@type": "Service", "position": 6, "name": "Synthesis & STA", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/synthesis-sta/" },
+        { "@type": "Service", "position": 7, "name": "Embedded Systems", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/embedded-systems/" },
+        { "@type": "Service", "position": 8, "name": "FPGA Development", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/fpga-development/" },
+        { "@type": "Service", "position": 9, "name": "Semiconductor Consulting", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/services/semiconductor-consulting/" },
+        { "@type": "Service", "position": 10, "name": "Corporate Training", "provider": { "@id": "https://semigridtechnologies.com/#organization" }, "url": "https://semigridtechnologies.com/training/corporate-training/" }
+      ]
+    }
+  ]
+}
+</script>
+
+<!--
+  ============================================================
+  FAQ SCHEMA — place on your /faq/ page (or homepage FAQ block)
+  Only include if the FAQ text is VISIBLE in that page's rendered HTML.
+  ============================================================
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is VLSI physical design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VLSI physical design is the process of converting a synthesized gate-level netlist into a manufacturable chip layout, covering floorplanning, placement, clock tree synthesis, routing, and timing/power signoff."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services does Semigrid Technologies offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Semigrid Technologies offers VLSI physical design, ASIC physical design, RTL-to-GDSII flow, design verification, DFT, synthesis and STA, embedded systems, FPGA development, semiconductor consulting, and VLSI training with placement assistance."
+      }
+    }
+  ]
+}
+</script>
